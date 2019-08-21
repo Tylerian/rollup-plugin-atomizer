@@ -30606,12 +30606,18 @@ function atomizer$1(options) {
             var cls = Array.from(lookup.values()).flat();
             var cfg = atomzr.getConfig(cls, options.config);
             var css = atomzr.getCss(cfg, options.cssOptions);
-            console.log("GenerateBundle ");
-            console.log(this);
-            // TODO: Deprecate this
-            this.emitAsset(options.outputFile || "atomic.css", css);
-            // TODO: Use emitFile once it gets visibility in rollup's api.
-            // this.emitFile({type: "asset", source: css, fileName: options.outputFile || "atomic.css" });
+            // emitFile available?
+            if (this.emitFile) {
+                this.emitFile({
+                    type: "asset",
+                    source: css,
+                    fileName: options.outputFile || "atomic.css"
+                });
+            }
+            else {
+                // TODO: Deprecate this once new emitFile api is stable
+                this.emitAsset(options.outputFile || "atomic.css", css);
+            }
         }
     };
 }
