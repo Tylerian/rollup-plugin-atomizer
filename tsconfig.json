@@ -1,0 +1,65 @@
+{
+    /* Signal the IDE to generate all files upon saving. */
+    "compileOnSave": false,
+
+    "compilerOptions": {
+        /* Show diagnostic information. */
+        "diagnostics": true,
+
+        /* Import non-ES modules as default imports. */
+        "esModuleInterop": true,
+
+        /* Disallow inconsistently-cased references to the same file. */
+        "forceConsistentCasingInFileNames": true,
+
+        /* Import emit helpers (e.g. __extends, __rest, etc..) from tslib. */
+        "importHelpers": true,
+
+        /* Print names of generated files part of the compilation. */
+        "listEmittedFiles": true,
+
+        /* Specify module code generation. */
+        "module": "esnext",
+
+        /* Determine how modules get resolved. */
+        "moduleResolution": "node",
+
+        /* Do not emit outputs. */
+        "noEmit": true,
+
+        /* Do not emit outputs if any errors were reported. */
+        "noEmitOnError": true,
+
+        /* Do not truncate error messages. */
+        "noErrorTruncation": true,
+
+        /* Report errors for fallthrough cases in switch statement. */
+        "noFallthroughCasesInSwitch": true,
+
+        /* Report an error when not all code paths in function return a value. */
+        "noImplicitReturns": true,
+        
+        /* Include modules imported with .json extension. */
+        "resolveJsonModule": true,
+
+        /* Generates corresponding .map file. */
+        "sourceMap": true,
+
+        /* Enable all strict type checking options. */
+        "strict": true,
+
+        /* Specify ECMAScript target version. */
+        "target": "es5"
+    },
+
+    /* A list of glob-like file patterns to be transpiled. */
+    "include": [
+        "src/**/*"
+    ],
+
+    /* A list of glob-like file patterns to be excluded from transpilation. */
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}

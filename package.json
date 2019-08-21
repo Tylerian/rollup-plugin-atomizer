@@ -1,0 +1,45 @@
+{
+  "name": "rollup-plugin-atomizer",
+  "version": "1.0.0",
+  "description": "Acss-io's atomizer bindings for rollup.",
+  "main": "dist/rollup-plugin-atomizer.cjs.js",
+  "module": "dist/rollup-plugin-atomizer.es.js",
+  "dependencies": {
+    "atomizer": "^3.6.0",
+    "rollup-pluginutils": "^2.8.1"
+  },
+  "devDependencies": {
+    "rollup": "^1.19.4",
+    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.5.3"
+  },
+  "peerDependencies": {
+    "rollup": "^1.19"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "package": "rollup -c",
+    "release": "npm run compile && npm run package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tylerian/rollup-plugin-atomizer.git"
+  },
+  "keywords": [
+    "acss",
+    "acss-io",
+    "atomic-css",
+    "atomizer",
+    "rollup",
+    "rollup-plugin"
+  ],
+  "author": "Jairo Tylera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tylerian/rollup-plugin-atomizer/issues"
+  },
+  "homepage": "https://github.com/Tylerian/rollup-plugin-atomizer#readme"
+}
